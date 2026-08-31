@@ -1,0 +1,11 @@
+{
+  "title": "Veselý & Šebesta | Instalatérství a topenářství Jižní Morava",
+  "description": "Instalatérské a topenářské práce na Jižní Moravě. Miroslav Veselý a Lukáš Šebesta — přes 15 let společné praxe, individuální přístup a moderní energeticky úsporné technologie.",
+  "language": "cs",
+  "robots": {
+    "index": true
+  },
+  "accessibility": {
+    "addBypassLinks": false
+  }
+}
