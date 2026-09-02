@@ -376,7 +376,7 @@ function Hero() {
               color: 'rgba(239,237,230,0.82)', marginBottom: '40px', maxWidth: '560px',
             }}
           >
-            Voda, odpady, tepelná čerpadla, plynové kotle a solární systémy na jižní Moravě — od dvou zkušených řemeslníků.
+            Voda, odpady, plynové kotle a solární systémy na jižní Moravě — od dvou zkušených řemeslníků.
           </p>
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
             <a
@@ -1163,9 +1163,9 @@ export default function App() {
       <main>
         <Hero />
         <TrustStrip />
+        <Partners />
         <Partnership />
         <Services />
-        <Partners />
         <ModernHeating />
         <WhyUs />
         <ServiceArea />
