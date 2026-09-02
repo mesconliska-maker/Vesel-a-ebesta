@@ -692,7 +692,15 @@ function Services() {
 
 // ── Partners strip ───────────────────────────────────────────────────────────
 
-const partnerBrands = ['VIPGAS Ptáček', 'Gienger', 'IVAR', 'LG', 'KOSMO', 'TRINITY', 'BRÖTJE']
+const partnerBrands = [
+  { name: 'VIPGAS Ptáček', logo: '/partners/vipgas.jpg' },
+  { name: 'Gienger', logo: '/partners/gienger.jpg' },
+  { name: 'IVAR', logo: '/partners/ivar.png' },
+  { name: 'LG', logo: '/partners/lg.png' },
+  { name: 'KOSMO', logo: null },
+  { name: 'TRINITY', logo: null },
+  { name: 'BRÖTJE', logo: '/partners/brotje.jpg' },
+]
 
 function Partners() {
   return (
@@ -701,18 +709,22 @@ function Partners() {
         <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', color: '#5a6875', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '28px' }}>
           Spolupracujeme s ověřenými a známými dodavateli
         </p>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '16px' }}>
           {partnerBrands.map(brand => (
-            <span
-              key={brand}
+            <div
+              key={brand.name}
               style={{
-                fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '14px', color: '#1C242B',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
                 backgroundColor: '#fff', border: '1px solid rgba(28,36,43,0.1)',
-                borderRadius: '8px', padding: '10px 20px',
+                borderRadius: '8px', height: '72px', padding: brand.logo ? '10px 24px' : '10px 20px',
               }}
             >
-              {brand}
-            </span>
+              {brand.logo ? (
+                <img src={brand.logo} alt={brand.name} style={{ height: '100%', maxWidth: '140px', objectFit: 'contain' }} />
+              ) : (
+                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '14px', color: '#1C242B' }}>{brand.name}</span>
+              )}
+            </div>
           ))}
         </div>
       </div>
