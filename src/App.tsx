@@ -228,9 +228,14 @@ function Header() {
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', height: '72px', gap: '32px' }}>
         {/* Wordmark */}
         <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', flexShrink: 0 }}>
-          <img src="/logo.png" alt="Veselý & Šebesta" style={{ height: '36px', width: '36px', objectFit: 'contain' }} />
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '20px', color: '#EFEDE6', letterSpacing: '-0.02em' }}>
-            Veselý <span style={{ color: '#C97A3E' }}>&</span> Šebesta
+          <img src="/droplet-icon.png" alt="Veselý & Šebesta" style={{ height: '46px', width: '40px', objectFit: 'contain' }} />
+          <span style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
+            <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '20px', color: '#EFEDE6', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+              Veselý <span style={{ color: '#3EA8E0' }}>&</span> Šebesta
+            </span>
+            <span style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', color: '#3EA8E0', letterSpacing: '0.03em' }}>
+              voda-topení-odpady-plyn
+            </span>
           </span>
         </a>
 
