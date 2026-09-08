@@ -475,10 +475,10 @@ function Partnership() {
             <div
               style={{
                 borderRadius: '12px', overflow: 'hidden',
-                backgroundImage: 'url(https://images.unsplash.com/photo-1659353588615-daca46eab6cf?w=720&h=580&fit=crop&auto=format)',
+                backgroundImage: 'url(/team-van.jpg)',
                 backgroundSize: 'cover', backgroundPosition: 'center',
                 backgroundColor: '#2a3540',
-                aspectRatio: '4/3.2',
+                aspectRatio: '3/4',
               }}
             />
             {/* Copper accent frame */}
