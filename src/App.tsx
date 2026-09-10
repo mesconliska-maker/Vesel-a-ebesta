@@ -699,12 +699,15 @@ function Services() {
 
 const partnerBrands = [
   { name: 'VIPGAS Ptáček', logo: '/partners/vipgas.jpg' },
+  { name: 'Ptáček', logo: '/partners/ptacek.png' },
   { name: 'Gienger', logo: '/partners/gienger.jpg' },
   { name: 'IVAR', logo: '/partners/ivar.png' },
   { name: 'LG', logo: '/partners/lg.png' },
   { name: 'KOSMO', logo: null },
   { name: 'TRINITY', logo: null },
   { name: 'BRÖTJE', logo: '/partners/brotje.jpg' },
+  { name: 'IMMERGAS', logo: '/partners/immergas.png' },
+  { name: 'BAXI', logo: '/partners/baxi.png' },
 ]
 
 function Partners() {
