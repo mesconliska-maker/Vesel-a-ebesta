@@ -524,7 +524,7 @@ function Partnership() {
                 {
                   name: 'Lukáš Šebesta',
                   phone: '+420 606 078 178',
-                  location: 'Kyjovice',
+                  location: 'Znojmo',
                 },
               ].map(p => (
                 <div
@@ -1147,7 +1147,7 @@ function Contact() {
                   <span style={{ color: '#C97A3E' }}><IconPhone /></span> +420 606 078 178
                 </a>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: 'rgba(239,237,230,0.78)', fontFamily: 'var(--font-body)', fontSize: '15px' }}>
-                  <span style={{ color: '#C97A3E', marginTop: '1px' }}><IconMapPin /></span> Kyjovice 43
+                  <span style={{ color: '#C97A3E', marginTop: '1px' }}><IconMapPin /></span> Znojmo
                 </div>
               </div>
             </div>
