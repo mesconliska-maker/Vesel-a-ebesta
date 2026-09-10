@@ -569,7 +569,7 @@ const services = [
     title: 'Plynové kotle',
     desc: 'Výměna a montáž plynových kotlů včetně servisu a uvedení do provozu.',
     accent: 'copper',
-    photos: ['https://images.unsplash.com/photo-1676210134190-3f2c0d5cf58d?w=600&h=500&fit=crop&auto=format'],
+    photos: ['/plyn1.jpeg', '/plyn2.jpeg', '/plyn3.jpeg'],
   },
   {
     icon: <IconSun />,
@@ -739,7 +739,11 @@ function Partners() {
 
 // ── Modern heating spotlight ──────────────────────────────────────────────────
 
+const heatPumpPhotos = ['/galerie4.jpeg', '/galerie5.jpeg', '/galerie6.jpeg', '/galerie7.jpeg', '/galerie8.jpeg', '/galerie9.jpeg']
+
 function ModernHeating() {
+  const [galleryOpen, setGalleryOpen] = useState(false)
+
   return (
     <section id="moderna" style={{ backgroundColor: '#1a2e26', padding: '120px 24px', position: 'relative', overflow: 'hidden' }}>
       {/* Subtle teal gradient wash */}
@@ -789,41 +793,90 @@ function ModernHeating() {
           </div>
 
           {/* Images */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div
-                style={{
-                  borderRadius: '10px', overflow: 'hidden',
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1776860150305-108ed577d7d4?w=500&h=360&fit=crop&auto=format)',
-                  backgroundSize: 'cover', backgroundPosition: 'center',
-                  backgroundColor: '#1d3a30', aspectRatio: '4/3',
-                  border: '1px solid rgba(62,138,107,0.2)',
-                }}
-              />
-              <div
-                style={{
-                  borderRadius: '10px', overflow: 'hidden',
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1724041875334-0a6397111c7e?w=500&h=260&fit=crop&auto=format)',
-                  backgroundSize: 'cover', backgroundPosition: 'center',
-                  backgroundColor: '#1d3a30', aspectRatio: '4/2.5',
-                  border: '1px solid rgba(62,138,107,0.2)',
-                }}
-              />
+          <div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div
+                  style={{
+                    borderRadius: '10px', overflow: 'hidden',
+                    backgroundImage: `url(${heatPumpPhotos[5]})`,
+                    backgroundSize: 'cover', backgroundPosition: 'center',
+                    backgroundColor: '#1d3a30', aspectRatio: '4/3',
+                    border: '1px solid rgba(62,138,107,0.2)',
+                  }}
+                />
+                <div
+                  style={{
+                    borderRadius: '10px', overflow: 'hidden',
+                    backgroundImage: `url(${heatPumpPhotos[0]})`,
+                    backgroundSize: 'cover', backgroundPosition: 'center',
+                    backgroundColor: '#1d3a30', aspectRatio: '4/2.5',
+                    border: '1px solid rgba(62,138,107,0.2)',
+                  }}
+                />
+              </div>
+              <div style={{ paddingTop: '32px' }}>
+                <div
+                  style={{
+                    borderRadius: '10px', overflow: 'hidden',
+                    backgroundImage: `url(${heatPumpPhotos[1]})`,
+                    backgroundSize: 'cover', backgroundPosition: 'center',
+                    backgroundColor: '#1d3a30', height: '100%', minHeight: '280px',
+                    border: '1px solid rgba(62,138,107,0.2)',
+                  }}
+                />
+              </div>
             </div>
-            <div style={{ paddingTop: '32px' }}>
-              <div
-                style={{
-                  borderRadius: '10px', overflow: 'hidden',
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1650551182956-47efa0f90b64?w=500&h=560&fit=crop&auto=format)',
-                  backgroundSize: 'cover', backgroundPosition: 'center',
-                  backgroundColor: '#1d3a30', height: '100%', minHeight: '280px',
-                  border: '1px solid rgba(62,138,107,0.2)',
-                }}
-              />
-            </div>
+            <button
+              onClick={() => setGalleryOpen(true)}
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '6px',
+                background: 'none', border: 'none', cursor: 'pointer', padding: 0,
+                fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', color: '#3E8A6B',
+              }}
+            >
+              Zobrazit všechny fotky <IconArrowRight />
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Heat pump gallery modal */}
+      {galleryOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          style={{ position: 'fixed', inset: 0, zIndex: 200, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px', backgroundColor: 'rgba(15,20,25,0.75)' }}
+          onClick={() => setGalleryOpen(false)}
+        >
+          <div
+            style={{ backgroundColor: '#fff', borderRadius: '14px', maxWidth: '720px', width: '100%', maxHeight: '85vh', overflowY: 'auto', padding: '32px' }}
+            onClick={e => e.stopPropagation()}
+          >
+            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '16px', marginBottom: '20px' }}>
+              <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '22px', color: '#1C242B', margin: 0 }}>Tepelná čerpadla — realizace</h3>
+              <button
+                onClick={() => setGalleryOpen(false)}
+                aria-label="Zavřít"
+                style={{ background: 'none', border: 'none', color: '#5a6875', cursor: 'pointer', padding: '4px', flexShrink: 0 }}
+              >
+                <IconX />
+              </button>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '14px' }}>
+              {heatPumpPhotos.map((url, pi) => (
+                <div
+                  key={pi}
+                  style={{
+                    borderRadius: '10px', overflow: 'hidden', aspectRatio: '4/3',
+                    backgroundImage: `url(${url})`, backgroundSize: 'cover', backgroundPosition: 'center',
+                  }}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
