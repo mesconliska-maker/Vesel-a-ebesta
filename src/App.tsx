@@ -363,6 +363,17 @@ function Hero() {
 
       <div style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto', padding: '120px 24px 80px', width: '100%' }}>
         <div style={{ maxWidth: '660px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '18px', marginBottom: '40px' }}>
+            <img src="/droplet-icon.png" alt="" style={{ height: '74px', width: '64px', objectFit: 'contain', flexShrink: 0 }} />
+            <div>
+              <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'clamp(26px, 3.4vw, 38px)', color: '#EFEDE6', letterSpacing: '-0.02em', lineHeight: 1.05 }}>
+                Veselý <span style={{ color: '#3EA8E0' }}>&</span> Šebesta
+              </span>
+              <span style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 'clamp(12px, 1.3vw, 15px)', color: '#3EA8E0', letterSpacing: '0.05em', marginTop: '4px' }}>
+                voda-topení-odpady-plyn
+              </span>
+            </div>
+          </div>
           <Eyebrow>Jižní Morava · Od roku 2010</Eyebrow>
           <h1
             style={{
