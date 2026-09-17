@@ -354,16 +354,13 @@ function Hero() {
       <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '4px', background: 'linear-gradient(to bottom, transparent, #C97A3E 30%, #C97A3E 70%, transparent)' }} />
 
       <div style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto', padding: '120px 24px 80px', width: '100%' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '26px', marginBottom: '48px' }}>
-          <img src="/droplet-icon.png" alt="" style={{ height: '104px', width: '90px', objectFit: 'contain', flexShrink: 0 }} />
-          <div>
-            <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'clamp(36px, 5.2vw, 58px)', color: '#EFEDE6', letterSpacing: '-0.02em', lineHeight: 1.05 }}>
-              Veselý <span style={{ color: '#3EA8E0' }}>&</span> Šebesta
-            </span>
-            <span style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 'clamp(15px, 1.8vw, 20px)', color: '#3EA8E0', letterSpacing: '0.05em', marginTop: '6px' }}>
-              voda-topení-odpady-plyn
-            </span>
-          </div>
+        <div style={{ marginBottom: '48px' }}>
+          <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'clamp(40px, 6.4vw, 72px)', color: '#EFEDE6', letterSpacing: '0', lineHeight: 1.05 }}>
+            Veselý <span style={{ color: '#3EA8E0' }}>&</span> Šebesta
+          </span>
+          <span style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 'clamp(16px, 2vw, 22px)', color: '#3EA8E0', letterSpacing: '0.12em', marginTop: '8px' }}>
+            voda-topení-odpady-plyn
+          </span>
         </div>
         <div style={{ maxWidth: '660px' }}>
           <Eyebrow>Jižní Morava · Od roku 2010</Eyebrow>
