@@ -227,16 +227,8 @@ function Header() {
     >
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', height: '72px', gap: '32px' }}>
         {/* Wordmark */}
-        <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', flexShrink: 0 }}>
-          <img src="/droplet-icon.png" alt="Veselý & Šebesta" style={{ height: '46px', width: '40px', objectFit: 'contain' }} />
-          <span style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
-            <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '20px', color: '#EFEDE6', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
-              Veselý <span style={{ color: '#3EA8E0' }}>&</span> Šebesta
-            </span>
-            <span style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', color: '#3EA8E0', letterSpacing: '0.03em' }}>
-              voda-topení-odpady-plyn
-            </span>
-          </span>
+        <a href="#" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}>
+          <img src="/droplet-icon.png" alt="Veselý & Šebesta" style={{ height: '50px', width: '44px', objectFit: 'contain' }} />
         </a>
 
         {/* Nav — desktop */}
@@ -362,18 +354,18 @@ function Hero() {
       <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '4px', background: 'linear-gradient(to bottom, transparent, #C97A3E 30%, #C97A3E 70%, transparent)' }} />
 
       <div style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto', padding: '120px 24px 80px', width: '100%' }}>
-        <div style={{ maxWidth: '660px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '18px', marginBottom: '40px' }}>
-            <img src="/droplet-icon.png" alt="" style={{ height: '74px', width: '64px', objectFit: 'contain', flexShrink: 0 }} />
-            <div>
-              <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'clamp(26px, 3.4vw, 38px)', color: '#EFEDE6', letterSpacing: '-0.02em', lineHeight: 1.05 }}>
-                Veselý <span style={{ color: '#3EA8E0' }}>&</span> Šebesta
-              </span>
-              <span style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 'clamp(12px, 1.3vw, 15px)', color: '#3EA8E0', letterSpacing: '0.05em', marginTop: '4px' }}>
-                voda-topení-odpady-plyn
-              </span>
-            </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '26px', marginBottom: '48px' }}>
+          <img src="/droplet-icon.png" alt="" style={{ height: '104px', width: '90px', objectFit: 'contain', flexShrink: 0 }} />
+          <div>
+            <span style={{ display: 'block', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 'clamp(36px, 5.2vw, 58px)', color: '#EFEDE6', letterSpacing: '-0.02em', lineHeight: 1.05 }}>
+              Veselý <span style={{ color: '#3EA8E0' }}>&</span> Šebesta
+            </span>
+            <span style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: 'clamp(15px, 1.8vw, 20px)', color: '#3EA8E0', letterSpacing: '0.05em', marginTop: '6px' }}>
+              voda-topení-odpady-plyn
+            </span>
           </div>
+        </div>
+        <div style={{ maxWidth: '660px' }}>
           <Eyebrow>Jižní Morava · Od roku 2010</Eyebrow>
           <h1
             style={{
