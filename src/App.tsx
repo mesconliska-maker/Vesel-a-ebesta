@@ -488,15 +488,13 @@ function Partnership() {
 
           {/* Image block */}
           <div style={{ position: 'relative' }}>
-            <div
-              style={{
-                borderRadius: '12px', overflow: 'hidden',
-                backgroundImage: 'url(/team-van.jpg)',
-                backgroundSize: 'cover', backgroundPosition: 'center',
-                backgroundColor: '#2a3540',
-                aspectRatio: '3/4',
-              }}
-            />
+            <div style={{ borderRadius: '12px', overflow: 'hidden', backgroundColor: '#2a3540', aspectRatio: '3/4' }}>
+              <img
+                src="/team-van.jpg"
+                alt="Miroslav Veselý a Lukáš Šebesta u servisního vozu Veselý & Šebesta"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
+              />
+            </div>
             {/* Copper accent frame */}
             <div style={{ position: 'absolute', bottom: '-20px', right: '-20px', width: '120px', height: '120px', border: '3px solid #C97A3E', borderRadius: '8px', zIndex: -1 }} />
             {/* Years badge */}
@@ -592,16 +590,16 @@ const services = [
   {
     icon: <IconRadiator />,
     title: 'Rozvody topení',
-    desc: 'Kompletní rozvody topné soustavy, modernizace a rekonstrukce.',
+    desc: 'Kompletní rozvody topné soustavy, podlahové vytápění, modernizace a rekonstrukce.',
     accent: 'copper',
-    photos: ['https://images.unsplash.com/photo-1650551182991-b07558247564?w=600&h=500&fit=crop&auto=format'],
+    photos: ['/podlahove-vytapeni.jpeg', '/podlahove-vytapeni2.jpeg', '/podlahove-vytapeni3.jpeg', '/podlahove-vytapeni4.jpeg', '/podlahove-vytapeni5.jpeg'],
   },
   {
     icon: <IconPipe />,
     title: 'Instalace plynového potrubí včetně domovních přípojek',
     desc: 'Montáž a rozvody plynového potrubí včetně domovních přípojek, projekty a revizní zprávy.',
     accent: 'copper',
-    photos: [] as string[],
+    photos: ['/plynovapripojka1.jpeg', '/plynovapripojka2.jpeg', '/plynovapripojka3.jpeg', '/plynovapripojka4.jpeg', '/plynovapripojka5.jpeg'],
   },
   {
     icon: <IconBrick />,

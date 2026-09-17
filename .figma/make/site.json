@@ -1,11 +1,20 @@
 {
   "title": "Veselý & Šebesta | Instalatérství a topenářství Jižní Morava",
-  "description": "Instalatérské a topenářské práce na Jižní Moravě. Miroslav Veselý a Lukáš Šebesta — přes 15 let společné praxe, individuální přístup a moderní energeticky úsporné technologie.",
+  "description": "Instalatér a topenář na Jižní Moravě — Pohořelice, Znojmo, Brno. Vodoinstalace, plynové kotle, tepelná čerpadla, rozvody plynu a topení. Přes 15 let praxe.",
   "language": "cs",
   "robots": {
     "index": true
   },
+  "icons": {
+    "icon": "/favicon.png"
+  },
+  "openGraph": {
+    "image": "/team-van.jpg"
+  },
   "accessibility": {
     "addBypassLinks": false
+  },
+  "customScripts": {
+    "headEnd": "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Plumber\",\"name\":\"Veselý & Šebesta\",\"description\":\"Instalatérské a topenářské práce na Jižní Moravě — voda, odpady, plynové kotle, tepelná čerpadla, rozvody plynu a topení.\",\"image\":\"/team-van.jpg\",\"telephone\":[\"+420774545455\",\"+420606078178\"],\"email\":\"vesely-sebesta@seznam.cz\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Znojemská 513\",\"addressLocality\":\"Pohořelice\",\"postalCode\":\"69123\",\"addressRegion\":\"Jihomoravský kraj\",\"addressCountry\":\"CZ\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Pohořelice\"},{\"@type\":\"City\",\"name\":\"Brno\"},{\"@type\":\"City\",\"name\":\"Znojmo\"},{\"@type\":\"City\",\"name\":\"Hustopeče\"},{\"@type\":\"City\",\"name\":\"Mikulov\"},{\"@type\":\"City\",\"name\":\"Kyjovice\"},{\"@type\":\"City\",\"name\":\"Moravský Krumlov\"},{\"@type\":\"City\",\"name\":\"Ivančice\"}],\"openingHoursSpecification\":{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\"],\"opens\":\"07:30\",\"closes\":\"19:00\"},\"sameAs\":[\"https://instagram.com/vesely_sebesta\"]}</script>"
   }
 }
