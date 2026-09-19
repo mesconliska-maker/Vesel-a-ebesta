@@ -1027,6 +1027,17 @@ function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    const subject = `Poptávka z webu — ${form.name}`
+    const bodyLines = [
+      `Jméno: ${form.name}`,
+      `Telefon: ${form.phone}`,
+      form.email ? `E-mail: ${form.email}` : null,
+      '',
+      'Popis zakázky:',
+      form.message,
+    ].filter((line): line is string => line !== null)
+    const mailtoUrl = `mailto:vesely-sebesta@seznam.cz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`
+    window.location.href = mailtoUrl
     setSent(true)
   }
 
@@ -1062,9 +1073,10 @@ function Contact() {
             {sent ? (
               <div style={{ backgroundColor: 'rgba(62,138,107,0.12)', border: '1px solid rgba(62,138,107,0.35)', borderRadius: '12px', padding: '40px', textAlign: 'center' }}>
                 <div style={{ color: '#3E8A6B', marginBottom: '16px' }}><IconCheck /></div>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '22px', color: '#EFEDE6', margin: '0 0 12px' }}>Odesláno!</h3>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '22px', color: '#EFEDE6', margin: '0 0 12px' }}>Otevírá se e-mail</h3>
                 <p style={{ fontFamily: 'var(--font-body)', fontSize: '15px', color: 'rgba(239,237,230,0.7)', margin: 0, lineHeight: 1.6 }}>
-                  Vaše poptávka byla odeslána. Ozveme se vám co nejdříve.
+                  Ve vašem e-mailovém programu se otevřela předvyplněná zpráva — stačí ji už jen odeslat. Pokud se nic neotevřelo, napište nám prosím přímo na{' '}
+                  <a href="mailto:vesely-sebesta@seznam.cz" style={{ color: '#3E8A6B' }}>vesely-sebesta@seznam.cz</a>.
                 </p>
               </div>
             ) : (
